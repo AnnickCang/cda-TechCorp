@@ -63,5 +63,5 @@ a:hover {
 }
 
 p + p {
-  margin-top: var(--space-8);
+  margin-top: var(--space-4);
 }
