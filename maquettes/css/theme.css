@@ -12,16 +12,6 @@
    La version de reference garde le theme par defaut. Exemple de theme
    "vert foret" ci-dessous, a decommenter pour tester.
    ========================================================================== */
-/*
-:root {
-  --color-primary: #166534;
-  --color-primary-hover: #14532d;
-  --color-primary-soft: #f0fdf4;
-  --color-focus: #15803d;
-  --font-sans: "Inter", system-ui, sans-serif;
-  --radius: 4px;
-}
-*/
 
 :root {
   --color-primary: #166534;
