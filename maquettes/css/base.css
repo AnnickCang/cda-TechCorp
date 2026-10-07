@@ -9,10 +9,12 @@
    - a : couleur, etat :hover
    - :focus-visible : contour visible pour la navigation clavier
    ========================================================================== */
+
 html {
+  font-family: var(--font-sans);
+  font-size: 100%;
   color: var(--color-text);
   background-color: var(--color-bg);
-  font-family: var(--font-sans);
 }
 
 body {
@@ -20,31 +22,18 @@ body {
   line-height: var(--leading-normal);
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   line-height: var(--leading-tight);
   font-weight: var(--weight-semibold);
 }
 
-h1 {
-  font-size: var(--text-2xl);
-}
-h2 {
-  font-size: var(--text-xl);
-}
-h3 {
-  font-size: var(--text-lg);
-}
-h4 {
-  font-size: var(--text-base);
-}
+h1 { font-size: var(--text-2xl); }
+h2 { font-size: var(--text-xl); }
+h3 { font-size: var(--text-lg); }
+h4 { font-size: var(--text-base); }
 
 @media (min-width: 64em) {
-  h1 {
-    font-size: var(--text-3xl);
-  }
+  h1 { font-size: var(--text-3xl); }
 }
 
 a {
@@ -62,6 +51,20 @@ a:hover {
   outline-offset: 2px;
 }
 
+strong {
+   font-weight: var(--weight-bold);
+}
+
+code {
+   color: var(--color-text);
+   background-color: var(--color-surface);
+}
+
+hr {
+   border: none;
+   border-top: 1px solid var(--color-border);
+}
+
 p + p {
-  margin-top: var(--space-4);
+   margin-top: var(--space-4);
 }
