@@ -197,3 +197,32 @@ a.btn[aria-disabled="true"] {
 .alert__title {
   font-weight: var(--weight-semibold);
 }
+
+/* 5. Page de connexion */
+.form {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.field__label {
+  font-weight: var(--weight-medium);
+}
+
+.input {
+  width: 100%;
+  min-height: 2.75rem;
+  border: 1px solid var(--color-border-input);
+  border-radius: var(--radius);
+  background-color: var(--color-surface);
+}
+
+.checkbox {
+  display: flex;
+  gap: var(--space-2);
+}
