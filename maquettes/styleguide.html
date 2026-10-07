@@ -11,7 +11,7 @@
     <title>Guide de style - TechCorp RH</title>
     <meta
       name="description"
-      content="Une phrase qui resume le contenu de la page."
+      content="Guide de style décrivant comment est construit les pages de l'application (palette de couleurs, typographie, etc...)"
     />
 
     <!-- Application interne : pas d'indexation par les moteurs de recherche. -->
@@ -19,14 +19,283 @@
     <meta name="theme-color" content="#1d4ed8" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 
+    <style>
+      .main__container {
+        width: 80%;
+        margin: auto auto;
+      }
+      .main__section {
+        padding: var(--space-5);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        background-color: var(--color-surface);
+        box-shadow: var(--shadow-sm);
+      }
+      .section__title {
+        color: var(--color-primary);
+      }
+      .carte__presentation {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-5);
+      }
+      .carte__dimensions {
+        width: 30%;
+      }
+      .color {
+        display: flex;
+        gap: var(--space-4);
+        flex-wrap: wrap;
+      }
+      .color__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid var(--color-border);
+        width: 12rem;
+        font-family: var(--font-sans);
+        font-weight: var(--weight-normal);
+      }
+      .color__colorview {
+        width: 100%;
+        min-height: 2.75rem;
+      }
+      .color__name {
+        width: 100%;
+        margin-left: var(--space-4);
+      }
+      .color__primary {
+        background-color: var(--color-primary);
+      }
+      .color__primary_soft {
+        background-color: var(--color-primary-soft);
+      }
+      .color__text {
+        background-color: var(--color-text);
+      }
+      .color__text_muted {
+        background-color: var(--color-text-muted);
+      }
+      .color__bg {
+        background-color: var(--color-bg);
+      }
+      .color__border_input {
+        background-color: var(--color-border-input);
+      }
+      .color__success {
+        background-color: var(--color-success);
+      }
+      .color__warning {
+        background-color: var(--color-warning);
+      }
+      .color__danger {
+        background-color: var(--color-danger);
+      }
+      .typo {
+        list-style-type: none;
+      }
+      .typo__text_3xl {
+        font-size: var(--text-3xl);
+      }
+      .typo__text_2xl {
+        font-size: var(--text-2xl);
+      }
+      .typo__text_xl {
+        font-size: var(--text-xl);
+      }
+      .typo__text_lg {
+        font-size: var(--text-lg);
+      }
+      .typo__text_base {
+        font-size: var(--text-base);
+      }
+      .typo__text_sm {
+        font-size: var(--text-sm);
+      }
+      .typo__text_xs {
+        font-size: var(--text-xs);
+      }
+      .space {
+        list-style-type: none;
+      }
+      .space__1 {
+        display: inline-block;
+        background-color: var(--color-primary);
+        width: var(--space-1);
+        height: var(--text-base);
+      }
+      .space__2 {
+        display: inline-block;
+        background-color: var(--color-primary);
+        width: var(--space-2);
+        height: var(--text-base);
+      }
+      .space__3 {
+        display: inline-block;
+        background-color: var(--color-primary);
+        width: var(--space-3);
+        height: var(--text-base);
+      }
+      .space__4 {
+        display: inline-block;
+        background-color: var(--color-primary);
+        width: var(--space-4);
+        height: var(--text-base);
+      }
+      .space__5 {
+        display: inline-block;
+        background-color: var(--color-primary);
+        width: var(--space-5);
+        height: var(--text-base);
+      }
+      .space__6 {
+        display: inline-block;
+        background-color: var(--color-primary);
+        width: var(--space-6);
+        height: var(--text-base);
+      }
+      .space__7 {
+        display: inline-block;
+        background-color: var(--color-primary);
+        width: var(--space-7);
+        height: var(--text-base);
+      }
+      .space__8 {
+        display: inline-block;
+        background-color: var(--color-primary);
+        width: var(--space-8);
+        height: var(--text-base);
+      }
+    </style>
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/app.js" defer></script>
   </head>
   <body>
-    <main>
+    <main class="main__container">
       <h1>Design system TechCorp RH</h1>
-      <section class="card">
-        <h2 class="card__title">Couleurs</h2>
+      <section class="main__section">
+        <h2 class="section__title">Couleurs</h2>
+        <hr />
+        <div class="color">
+          <article class="color__block">
+            <span class="color__colorview color__primary"></span>
+            <span class="color__name">--color-primary</span>
+          </article>
+          <article class="color__block">
+            <span class="color__colorview color__primary_soft"></span>
+            <span class="color__name">--color-primary-soft</span>
+          </article>
+          <article class="color__block">
+            <span class="color__colorview color__text"></span>
+            <span class="color__name">--color-text</span>
+          </article>
+          <article class="color__block">
+            <span class="color__colorview color__text_muted"></span>
+            <span class="color__name">--color-text-muted</span>
+          </article>
+          <article class="color__block">
+            <span class="color__colorview color__bg"></span>
+            <span class="color__name">--color-bg</span>
+          </article>
+          <article class="color__block">
+            <span class="color__colorview color__border_input"></span>
+            <span class="color__name">--color-border-input</span>
+          </article>
+          <article class="color__block">
+            <span class="color__colorview color__success"></span>
+            <span class="color__name">--color-success</span>
+          </article>
+          <article class="color__block">
+            <span class="color__colorview color__warning"></span>
+            <span class="color__name">--color-warning</span>
+          </article>
+          <article class="color__block">
+            <span class="color__colorview color__danger"></span>
+            <span class="color__name">--color-danger</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="main__section">
+        <h2 class="section__title">Typographie</h2>
+        <hr />
+        <ul class="typo">
+          <li class="typo__text_3xl">--text-3xl : Titre de page desktop</li>
+          <li class="typo__text_2xl">--text-2xl : Titre de page mobile</li>
+          <li class="typo__text_xl">--text-xl : Titre de section</li>
+          <li class="typo__text_lg">--text-lg : Titre de carte</li>
+          <li class="typo__text_base">--text-base : Texte courant</li>
+          <li class="typo__text_sm">--text-sm : Aides</li>
+          <li class="typo__text_xs">--text-xs : Badges</li>
+        </ul>
+      </section>
+
+      <section class="main__section">
+        <h2 class="section__title">Espacements</h2>
+        <hr />
+        <ul class="space">
+          <li><span class="space__1"></span> --space-1 : 4px</li>
+          <li><span class="space__2"></span> --space-2 : 8px</li>
+          <li><span class="space__3"></span> --space-3 : 12px</li>
+          <li><span class="space__4"></span> --space-4 : 16px</li>
+          <li><span class="space__5"></span> --space-5 : 24px</li>
+          <li><span class="space__6"></span> --space-6 : 32px</li>
+          <li><span class="space__7"></span> --space-7 : 48px</li>
+          <li><span class="space__8"></span> --space-8 : 64px</li>
+        </ul>
+      </section>
+
+      <section class="main__section">
+        <h2 class="section__title">Boutons</h2>
+        <hr />
+        <button type="button" class="btn btn--primary">btn--primary</button>
+        <button type="button" class="btn btn--secondary">btn--secondary</button>
+        <button type="button" class="btn btn--danger">btn--danger</button>
+        <button type="button" class="btn btn--ghost">btn--ghost</button>
+        <button type="button" class="btn btn--sm">btn--sm</button>
+        <button type="button" class="btn btn:disabled">btn:disabled</button>
+      </section>
+
+      <section class="main__section">
+        <h2 class="section__title">Badges</h2>
+        <hr />
+        <p class="badge badge--pending">En attente</p>
+        <p class="badge badge--in-progress">En cours</p>
+        <p class="badge badge--approved">Validée</p>
+        <p class="badge badge--rejected">Refusé</p>
+        <p class="badge badge--refunded">Remboursé</p>
+      </section>
+
+      <section class="main__section">
+        <h2 class="section__title">Alertes</h2>
+        <hr />
+        <p class="alert alert--info">En attente de validation par la RH</p>
+        <p class="alert alert--success">Authentification réussie</p>
+        <p class="alert alert--warning">Attention il vous reste 2 CP</p>
+        <p class="alert alert--error">Demande impossible</p>
+      </section>
+
+      <section class="main__section">
+        <h2 class="section__title">Cartes et indicateur chiffré</h2>
+        <hr />
+        <div class="carte__presentation">
+          <div class="card carte__dimensions">
+            <p>Congés payés restant</p>
+            <p><strong>14</strong> jours</p>
+            <p>sur 25 jours acquis</p>
+          </div>
+          <div class="card carte__dimensions">
+            <header class="card__header">
+              <h3 class="card__title">Titre de la carte</h3>
+              <p class="badge badge--pending">En attente</p>
+            </header>
+            <p>Contenu de la carte</p>
+            <hr />
+            <footer class="card_footer">Pied de de page de la carte</footer>
+          </div>
+        </div>
       </section>
     </main>
   </body>
