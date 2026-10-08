@@ -37,6 +37,15 @@
   align-items: center;
 }
 
+.auth__header-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth__header-description-title {
+  font-size: var(--text-3xl);
+}
+
 @media (min-width: 64em) {
   .auth {
     grid-template-columns: 1fr 1fr;
