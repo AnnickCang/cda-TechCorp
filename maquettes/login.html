@@ -38,7 +38,67 @@
         </div>
         <footer class="aside__footer">TechCorp 2026</footer>
       </div>
-      <main class="auth__main"></main>
+      <main class="auth__main">
+        <div class="auth__panel">
+          <div>
+            <h1>Connexion</h1>
+            <p>Utilisez votre adresse e-mail professionnelle.</p>
+          </div>
+          <form action="" method="post" class="form">
+            <div class="field">
+              <label for="email-login" class="field__label"
+                >Adresse e-mail</label
+              >
+              <input
+                type="email"
+                name="email-login"
+                id="email-login"
+                autocomplete="username"
+                required
+                class="input"
+              />
+            </div>
+            <div class="field">
+              <div class="field--items-in-row">
+                <label for="password-login" class="field__label"
+                  >Mot de passe</label
+                >
+                <a href="">Mot de passe oublié ?</a>
+              </div>
+              <input
+                type="password"
+                name="password-login"
+                id="password-login"
+                autocomplete="current-password"
+                required
+                class="input"
+              />
+            </div>
+            <div class="checkbox">
+              <input
+                type="checkbox"
+                name="stay-signed-in"
+                id="stay-signed-in"
+              />
+              <label for="stay-signed-in" class="field__label"
+                >Rester connecté(e) sur cet appareil</label
+              >
+            </div>
+            <div class="field">
+              <input
+                type="submit"
+                value="Se connecter"
+                class="btn btn--primary"
+              />
+            </div>
+          </form>
+          <div class="auth__footer">
+            <a href="">Mentions légales</a> -
+            <a href="">Politique de confidentialité</a> -
+            <a href="">Accessibilité : partiellement conforme</a>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>

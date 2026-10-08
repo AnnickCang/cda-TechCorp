@@ -206,17 +206,22 @@ a.btn[aria-disabled="true"] {
   border-radius: var(--radius);
 }
 
-/* 5. Page de connexion */
-/*
+/* 6. Page de connexion */
 .form {
   display: grid;
   gap: var(--space-5);
+  /*margin-top: var(--space-6);*/
 }
 
 .field {
   display: flex;
   flex-direction: column;
   gap: var(--space-1);
+}
+
+.field--items-in-row {
+  display: flex;
+  justify-content: space-between;
 }
 
 .field__label {
@@ -235,4 +240,3 @@ a.btn[aria-disabled="true"] {
   display: flex;
   gap: var(--space-2);
 }
-*/
