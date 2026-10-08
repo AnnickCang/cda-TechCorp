@@ -24,10 +24,17 @@
   place-items: center;
   padding: var(--space-6) var(--space-4);
 }
-
+/*
 .auth__panel {
   width: 100%;
   max-width: 28rem;
+}
+*/
+.auth__header {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 10px;
+  align-items: center;
 }
 
 @media (min-width: 64em) {

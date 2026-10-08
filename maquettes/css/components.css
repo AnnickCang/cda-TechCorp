@@ -198,7 +198,16 @@ a.btn[aria-disabled="true"] {
   font-weight: var(--weight-semibold);
 }
 
+/* 5. Images */
+.entreprise__logo {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
 /* 5. Page de connexion */
+/*
 .form {
   display: grid;
   gap: var(--space-5);
@@ -226,3 +235,4 @@ a.btn[aria-disabled="true"] {
   display: flex;
   gap: var(--space-2);
 }
+*/
