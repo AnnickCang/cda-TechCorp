@@ -72,3 +72,27 @@
 }
 
 /* 2. Coquille applicative */
+.app {
+  display: grid;
+  grid-template-areas:
+    "topbar topbar"
+    "sidebar content";
+  grid-template-rows: var(--header-height) 1fr;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  width: 100vw;
+  height: 100vh;
+}
+
+.app__topbar {
+  width: 100%;
+  height: var(--header-height);
+  border: 2px solid red;
+}
+
+.app__sidebar {
+  border: 2px solid blue;
+}
+
+.app__content {
+  border: 2px solid green;
+}
