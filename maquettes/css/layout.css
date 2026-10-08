@@ -76,7 +76,7 @@
   display: grid;
   grid-template-areas:
     "topbar topbar"
-    "sidebar content";
+    "sidebar main-content";
   grid-template-rows: var(--header-height) 1fr;
   grid-template-columns: var(--sidebar-width) 1fr;
   width: 100vw;
@@ -84,15 +84,27 @@
 }
 
 .app__topbar {
-  width: 100%;
+  grid-area: topbar;
   height: var(--header-height);
+  display: grid;
+  grid-template-columns: 2rem 1fr 2rem 2rem var(--space-6) 2rem;
   border: 2px solid red;
 }
 
+.app__topbar-logo-companyname {
+  display: flex;
+}
+
+.app__topbar-nav {
+  display: flex;
+}
+
 .app__sidebar {
+  grid-area: sidebar;
   border: 2px solid blue;
 }
 
 .app__content {
+  grid-area: main-content;
   border: 2px solid green;
 }
