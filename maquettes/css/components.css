@@ -15,8 +15,7 @@
   justify-content: center;
   gap: var(--space-2);
   min-height: 2.75rem;
-  /*padding: var(--space-2) var(--space-4);*/
-  padding: 0 0;
+  padding: var(--space-2) var(--space-4);
   border: 1px solid transparent;
   border-radius: var(--radius);
   font-size: var(--text-sm);
@@ -155,6 +154,7 @@ a.btn[aria-disabled="true"] {
 
 .card__title {
   font-size: var(--text-lg);
+  font-weight: var(--weight-semibold);
 }
 
 .card__footer {
@@ -240,4 +240,159 @@ a.btn[aria-disabled="true"] {
 .checkbox {
   display: flex;
   gap: var(--space-2);
+}
+
+/* 7. Topbar */
+.topbar {
+  grid-area: topbar;
+  height: var(--header-height);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-1);
+  padding-left: var(--space-2);
+  padding-right: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
+.topbar__logo-companyname {
+  display: flex;
+  align-items: center;
+}
+
+.topbar__nav {
+  display: flex;
+  gap: var(--space-1);
+  justify-content: end;
+  align-items: center;
+}
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1 solid black;
+  color: var(--color-neutral-text);
+  background-color: var(--color-neutral-soft);
+  font-weight: var(--weight-bold);
+}
+
+.avatar__infos > * + * {
+  margin: 0;
+}
+
+/* 8. Sidebar */
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.nav {
+  display: grid;
+  grid-template-rows: repeat(4, var(--text-lg));
+  grid-template-columns: var(--space-2) 1fr;
+  justify-content: center;
+  gap: var(--space-5);
+  padding-top: var(--space-7);
+}
+
+.nav__ico {
+  width: var(--space-4);
+  height: var(--space-4);
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: var(--text-xl);
+  font-weight: var(--weight-semibold);
+}
+
+/* 9. Content */
+.content {
+  grid-area: main-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content__box {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 10% 25% 60%;
+  gap: var(--space-2);
+  justify-content: space-around;
+  border: 1px solid purple;
+}
+
+.content__header {
+  display: grid;
+  grid-template-columns: 1fr 25% 25%;
+  gap: var(--space-1);
+  align-items: center;
+}
+
+.content__resume {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  padding: var(--space-1) 0;
+}
+
+.content__holidays {
+  grid-area: holidays;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.content__equipment {
+  grid-area: equipment;
+}
+
+.content__bills {
+  grid-area: bills;
+}
+
+/* 10. Statistiques */
+/*.stat__label {
+  font-size: var(--text-xl);
+  font-weight: var(--weight-semibold);
+}*/
+
+.stat__value {
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-bold);
+}
+
+.bar {
+  height: var(--text-xs);
+  width: 100%;
+  background-color: var(--color-surface-muted);
+  /*Pour avoir une forme de gellule, il faut que la valeur donnée à border-radius soit énorme*/
+  border-radius: var(--radius-full);
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.bar--filled {
+  background-color: var(--color-primary);
+}
+
+/* 11. Listes */
+.list {
+  list-style-type: none;
+  flex-grow: 1;
+}
+
+.list__element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

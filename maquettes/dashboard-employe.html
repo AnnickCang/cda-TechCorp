@@ -21,8 +21,8 @@
   </head>
   <body>
     <div class="app">
-      <div class="app__topbar">
-        <div class="app__topbar-logo-companyname">
+      <div class="topbar">
+        <div class="topbar__logo-companyname">
           <img
             class="entreprise__logo"
             src="assets/logo.svg"
@@ -30,10 +30,10 @@
           />
           <h2>TechCorp RH</h2>
         </div>
-        <div class="app__topbar-nav">
+        <div class="topbar__nav">
           <div>Alertes</div>
-          <div class="app__topbar-avatar">CM</div>
-          <div class="app__topbar-employee">
+          <div class="avatar">CM</div>
+          <div class="avatar__infos">
             <p>Claire Martin</p>
             <p>Développeuse</p>
           </div>
@@ -41,25 +41,25 @@
         </div>
       </div>
 
-      <div class="app__sidebar">
-        <div class="app__sidebar-nav">
-          <span class="app__sidebar-ico">T</span>
-          <a href="" class="app__sidebar-link">Tableau de bord</a>
+      <div class="sidebar">
+        <nav class="nav">
+          <span class="nav__ico">T</span>
+          <a href="" class="nav__link">Tableau de bord</a>
 
-          <span class="app__sidebar-ico">C</span>
-          <a href="" class="app__sidebar-link">Congés</a>
+          <span class="nav__ico">C</span>
+          <a href="" class="nav__link">Congés</a>
 
-          <span class="app__sidebar-ico">N</span>
-          <a href="" class="app__sidebar-link">Notes de frais</a>
+          <span class="nav__ico">N</span>
+          <a href="" class="nav__link">Notes de frais</a>
 
-          <span class="app__sidebar-ico">M</span>
-          <a href="" class="app__sidebar-link">Matériel</a>
-        </div>
+          <span class="nav__ico">M</span>
+          <a href="" class="nav__link">Matériel</a>
+        </nav>
       </div>
 
-      <div class="app__content">
-        <div class="app__content-box">
-          <div class="app__content-header">
+      <div class="content">
+        <div class="content__box">
+          <div class="content__header">
             <div>
               <h1>Bonjour Claire</h1>
               <h2>Voici le résumé de vos de demandes au 08 Octobre 2026</h2>
@@ -72,21 +72,71 @@
             </button>
           </div>
 
-          <div class="app__content-resume">
-            <div class="app__content-resume-holidays">
-              Congés payés restants
+          <div class="content__resume">
+            <div class="card">
+              <p class="stat__label">Congés payés restants</p>
+              <span class="stat__value">14</span><span> jours</span>
+              <!-- Barre de progression : deux objets <div> dessinés qui se superposent -->
+              <div class="bar">
+                <div class="bar bar--filled" style="width: 60%"></div>
+              </div>
+              <p>8 pris, 3 en attente, sur 25</p>
             </div>
-            <div class="app__content-resume-rtt">RTT restants</div>
-            <div class="app__content-resume-bills">
-              Notes de frais en attente
+            <div class="card">
+              <p class="stat__label">RTT restants</p>
+              <span class="stat__value">6</span><span> jours</span>
+              <div class="bar">
+                <div class="bar bar--filled" style="width: 60%"></div>
+              </div>
+              <p>4 pris, sur 10</p>
             </div>
-            <div class="app__content-resume-equipment">Matériel attribué</div>
+            <div class="card">
+              <p class="stat__label">Notes de frais en attente</p>
+              <span class="stat__value">89,50</span><span> €</span>
+              <p>1 note en cours de validation</p>
+            </div>
+            <div class="card">
+              <p class="stat__label">Matériel attribué</p>
+              <span class="stat__value">3</span><span> équipements</span>
+              <p>Dernière attribution le 02 mars 2026</p>
+            </div>
           </div>
 
-          <div class="app__content_details">
-            <div class="app__content-holidays">Mes prochaines absences</div>
-            <div class="app__content-equipment">Mon matériel</div>
-            <div class="app__content-bills">Mes dernières notes de frais</div>
+          <div class="app__content-details">
+            <div class="card content__holidays">
+              <p class="card__title">Mes prochaines absences</p>
+              <ul class="list">
+                <li class="list__element">
+                  <div class="list__info">
+                    <p>Congés payés, 5 jours</p>
+                    <p>Du lundi 26 au vendredi 30 octobre 2026</p>
+                  </div>
+                  <span class="badge badge--pending">En attente Manager</span>
+                </li>
+                <hr />
+                <li class="list__element">
+                  <div class="list__info">
+                    <p>RTT, 1 jour</p>
+                    <p>Le vendredi 13 novembre 2026</p>
+                  </div>
+                  <div class="badge badge--approved">Validée</div>
+                </li>
+                <hr />
+                <li class="list__element">
+                  <div class="list__info">
+                    <p>Congés payés, 3 jours</p>
+                    <p>Dul undi 28 au mercredi 30 décembre 2026</p>
+                  </div>
+                  <div class="badge badge--in-progress">En attente RH</div>
+                </li>
+              </ul>
+            </div>
+            <div class="card content__equipment">
+              <p class="card__title">Mon matériel</p>
+            </div>
+            <div class="card content__bills">
+              <p class="card__title">Mes dernières notes de frais</p>
+            </div>
           </div>
         </div>
       </div>
