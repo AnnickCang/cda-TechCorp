@@ -25,20 +25,71 @@
         <div class="app__topbar-logo-companyname">
           <img
             class="entreprise__logo"
-            src="/maquettes/assets/logo.svg"
+            src="assets/logo.svg"
             alt="Logo TechCorp"
           />
           <h2>TechCorp RH</h2>
         </div>
         <div class="app__topbar-nav">
           <div>Alertes</div>
-          <div>Initiales</div>
-          <div>Nom complet et intitulé poste</div>
-          <div>Icone log out</div>
+          <div class="app__topbar-avatar">CM</div>
+          <div class="app__topbar-employee">
+            <p>Claire Martin</p>
+            <p>Développeuse</p>
+          </div>
+          <a href="login.html" id="log-out">Log out</a>
         </div>
       </div>
-      <div class="app__sidebar">SIDEBAR</div>
-      <div class="app__content">CONTENT</div>
+
+      <div class="app__sidebar">
+        <div class="app__sidebar-nav">
+          <span class="app__sidebar-ico">T</span>
+          <a href="" class="app__sidebar-link">Tableau de bord</a>
+
+          <span class="app__sidebar-ico">C</span>
+          <a href="" class="app__sidebar-link">Congés</a>
+
+          <span class="app__sidebar-ico">N</span>
+          <a href="" class="app__sidebar-link">Notes de frais</a>
+
+          <span class="app__sidebar-ico">M</span>
+          <a href="" class="app__sidebar-link">Matériel</a>
+        </div>
+      </div>
+
+      <div class="app__content">
+        <div class="app__content-box">
+          <div class="app__content-header">
+            <div>
+              <h1>Bonjour Claire</h1>
+              <h2>Voici le résumé de vos de demandes au 08 Octobre 2026</h2>
+            </div>
+            <button type="button" class="btn btn--primary">
+              Nouvelle note de frais
+            </button>
+            <button type="button" class="btn btn--primary">
+              Demander un congé
+            </button>
+          </div>
+
+          <div class="app__content-resume">
+            <div class="app__content-resume-holidays">
+              Congés payés restants
+            </div>
+            <div class="app__content-resume-rtt">RTT restants</div>
+            <div class="app__content-resume-bills">
+              Notes de frais en attente
+            </div>
+            <div class="app__content-resume-equipment">Matériel attribué</div>
+          </div>
+
+          <div class="app__content_details">
+            <div class="app__content-holidays">Mes prochaines absences</div>
+            <div class="app__content-equipment">Mon matériel</div>
+            <div class="app__content-bills">Mes dernières notes de frais</div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

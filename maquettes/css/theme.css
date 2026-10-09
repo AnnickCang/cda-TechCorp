@@ -20,6 +20,7 @@
   --color-focus: #15803d;
   --font-sans: "SourceSans3", system-ui, sans-serif;
   --radius: 4px;
+  --button-height: 40px;
 }
 
 @font-face {
