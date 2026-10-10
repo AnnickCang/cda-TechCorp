@@ -243,18 +243,6 @@ a.btn[aria-disabled="true"] {
 }
 
 /* 7. Topbar */
-.topbar {
-  grid-area: topbar;
-  height: var(--header-height);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-1);
-  padding-left: var(--space-2);
-  padding-right: var(--space-2);
-  border-bottom: 1px solid var(--color-border);
-  background-color: var(--color-surface);
-}
-
 .topbar__logo-companyname {
   display: flex;
   align-items: center;
@@ -285,14 +273,6 @@ a.btn[aria-disabled="true"] {
 }
 
 /* 8. Sidebar */
-.sidebar {
-  grid-area: sidebar;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-}
-
 .nav {
   display: grid;
   grid-template-rows: repeat(4, var(--text-lg));
@@ -314,37 +294,6 @@ a.btn[aria-disabled="true"] {
 }
 
 /* 9. Content */
-.content {
-  grid-area: main-content;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.content__box {
-  width: 80%;
-  height: 100%;
-  display: grid;
-  grid-template-rows: 10% 25% 60%;
-  gap: var(--space-2);
-  justify-content: space-around;
-  border: 1px solid purple;
-}
-
-.content__header {
-  display: grid;
-  grid-template-columns: 1fr 25% 25%;
-  gap: var(--space-1);
-  align-items: center;
-}
-
-.content__resume {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-4);
-  padding: var(--space-1) 0;
-}
-
 .content__holidays {
   grid-area: holidays;
   display: flex;
@@ -354,6 +303,9 @@ a.btn[aria-disabled="true"] {
 
 .content__equipment {
   grid-area: equipment;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
 }
 
 .content__bills {
@@ -361,10 +313,10 @@ a.btn[aria-disabled="true"] {
 }
 
 /* 10. Statistiques */
-/*.stat__label {
+.stat__label {
   font-size: var(--text-xl);
   font-weight: var(--weight-semibold);
-}*/
+}
 
 .stat__value {
   font-size: var(--text-3xl);
@@ -395,4 +347,17 @@ a.btn[aria-disabled="true"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* 12. Les tableaux */
+.table {
+  width: 100%;
+}
+
+.table__text {
+  text-align: left;
+}
+
+.table__number {
+  text-align: right;
 }

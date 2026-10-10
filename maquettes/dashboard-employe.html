@@ -21,7 +21,7 @@
   </head>
   <body>
     <div class="app">
-      <div class="topbar">
+      <div class="app__topbar">
         <div class="topbar__logo-companyname">
           <img
             class="entreprise__logo"
@@ -41,7 +41,7 @@
         </div>
       </div>
 
-      <div class="sidebar">
+      <div class="app__sidebar">
         <nav class="nav">
           <span class="nav__ico">T</span>
           <a href="" class="nav__link">Tableau de bord</a>
@@ -54,12 +54,15 @@
 
           <span class="nav__ico">M</span>
           <a href="" class="nav__link">Matériel</a>
+
+          <span class="nav__ico">D</span>
+          <a href="" class="nav__link">Se déconnecter</a>
         </nav>
       </div>
 
-      <div class="content">
-        <div class="content__box">
-          <div class="content__header">
+      <div class="app__content">
+        <div class="app__content-box">
+          <div class="app__content-header">
             <div>
               <h1>Bonjour Claire</h1>
               <h2>Voici le résumé de vos de demandes au 08 Octobre 2026</h2>
@@ -70,9 +73,12 @@
             <button type="button" class="btn btn--primary">
               Demander un congé
             </button>
+            <button type="button" class="btn btn--primary">
+              Demander du matériel
+            </button>
           </div>
 
-          <div class="content__resume">
+          <div class="app__content-resume">
             <div class="card">
               <p class="stat__label">Congés payés restants</p>
               <span class="stat__value">14</span><span> jours</span>
@@ -104,7 +110,10 @@
 
           <div class="app__content-details">
             <div class="card content__holidays">
-              <p class="card__title">Mes prochaines absences</p>
+              <div class="card__header">
+                <p class="card__title">Mes prochaines absences</p>
+                <a href="">Tout voir</a>
+              </div>
               <ul class="list">
                 <li class="list__element">
                   <div class="list__info">
@@ -131,8 +140,12 @@
                 </li>
               </ul>
             </div>
+
             <div class="card content__equipment">
-              <p class="card__title">Mon matériel</p>
+              <div class="card__header">
+                <p class="card__title">Mon matériel</p>
+                <a href="">Tout voir</a>
+              </div>
               <ul class="list">
                 <li>
                   <p>MacBook Pro 14 pouces</p>
@@ -150,8 +163,42 @@
                 </li>
               </ul>
             </div>
+
             <div class="card content__bills">
-              <p class="card__title">Mes dernières notes de frais</p>
+              <div class="card__header">
+                <p class="card__title">Mes dernières notes de frais</p>
+                <a href="">Tout voir</a>
+              </div>
+              <table class="table">
+                <tr>
+                  <th class="table__text">DATE</th>
+                  <th class="table__text">DESCRIPTION</th>
+                  <th class="table__text">TYPE</th>
+                  <th class="table__number">MONTANT</th>
+                  <th class="table__text">STATUT</th>
+                </tr>
+                <tr>
+                  <td class="table__text">12/09/2026</td>
+                  <td class="table__text">Train Lyon - Paris, salon Devoxx</td>
+                  <td class="table__text">Transport</td>
+                  <td class="table__number">89,50 €</td>
+                  <td class="table__text"><span class="badge badge--pending">En attente manager</span></td>
+                </tr>
+                <tr>
+                  <td class="table__text">15/09/2026</td>
+                  <td class="table__text">Déjeuner client Axelis</td>
+                  <td class="table__text">Restauration</td>
+                  <td class="table__number">42,00 €</td>
+                  <td class="table__text"><span class="badge badge--approved">Validée</span></td>
+                </tr>
+                <tr>
+                  <td class="table__text">02/09/2026</td>
+                  <td class="table__text">Hôtel, formation Kubernetes</td>
+                  <td class="table__text">Hébergement</td>
+                  <td class="table__number">128,00 €</td>
+                  <td class="table__text"><span class="badge badge--refunded">Remboursée</span></td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
