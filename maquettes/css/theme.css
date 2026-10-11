@@ -14,13 +14,25 @@
    ========================================================================== */
 
 :root {
+  /* Couleurs */
   --color-primary: #166534;
   --color-primary-hover: #14532d;
   --color-primary-soft: #f0fdf4;
   --color-focus: #15803d;
+  --color-dot-text: var(--gray-0);
+
+  /* Police et texte */
   --font-sans: "SourceSans3", system-ui, sans-serif;
+  
+  /* Effets */
   --radius: 4px;
+  
+  /* Boutons */
   --button-height: 40px;
+
+  /* Icones */
+  --icon-width-base: 1.25rem;    /* 20px */
+  --icon-height-base: 1.25rem;    /* 20px */
 }
 
 @font-face {

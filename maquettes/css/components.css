@@ -200,12 +200,36 @@ a.btn[aria-disabled="true"] {
   font-weight: var(--weight-semibold);
 }
 
-/* 5. Images */
+/* 4.1. Pastilles d'alerte (peut-être que ce sera regroupé ailleurs ou supprimé) */
+.dot {
+  display: flex;
+}
+
+.dot__number {
+  width: var(--icon-width-base);
+  height: var(--icon-height-base);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--red-700);
+  border-radius: 50%;
+  background-color: var(--red-700);
+  color: var(--color-dot-text);
+}
+
+/* 5. Images et icônes */
 .entreprise__logo {
   width: 2rem;
   height: 2rem;
   border: 2px solid var(--color-border);
   border-radius: var(--radius);
+}
+
+.icon {
+  width: var(--icon-width-base);
+  height: var(--icon-height-base);
 }
 
 /* 6. Page de connexion */
@@ -250,7 +274,7 @@ a.btn[aria-disabled="true"] {
 
 .topbar__nav {
   display: flex;
-  gap: var(--space-1);
+  gap: var(--space-5);
   justify-content: end;
   align-items: center;
 }
@@ -274,17 +298,23 @@ a.btn[aria-disabled="true"] {
 
 /* 8. Sidebar */
 .nav {
-  display: grid;
-  grid-template-rows: repeat(4, var(--text-lg));
-  grid-template-columns: var(--space-2) 1fr;
-  justify-content: center;
-  gap: var(--space-5);
-  padding-top: var(--space-7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--space-6) 0;
+  height: 100%;
 }
 
-.nav__ico {
-  width: var(--space-4);
-  height: var(--space-4);
+.nav__main {
+  display: grid;
+  grid-template-rows: repeat(4, var(--text-lg));
+  grid-template-columns: var(--space-5) 1fr;
+  justify-content: center;
+  gap: var(--space-5);
+}
+
+.nav__main--logout {
+  grid-template-rows: var(--text-lg);
 }
 
 .nav__link {
