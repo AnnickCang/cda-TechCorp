@@ -232,6 +232,10 @@ a.btn[aria-disabled="true"] {
   height: var(--icon-height-base);
 }
 
+.icon--sidebar {
+  filter: brightness(0) invert(1);
+}
+
 /* 6. Page de connexion */
 .form {
   display: grid;
@@ -310,6 +314,7 @@ a.btn[aria-disabled="true"] {
   grid-template-rows: repeat(4, var(--text-lg));
   grid-template-columns: var(--space-5) 1fr;
   justify-content: center;
+  align-items: center;
   gap: var(--space-5);
 }
 
@@ -321,6 +326,11 @@ a.btn[aria-disabled="true"] {
   text-decoration: none;
   font-size: var(--text-xl);
   font-weight: var(--weight-semibold);
+  color: var(--color-text-sidebar);
+}
+
+.nav__link:hover {
+  color: var(--color-text-hover-sidebar);
 }
 
 /* 9. Content */
@@ -342,6 +352,14 @@ a.btn[aria-disabled="true"] {
   grid-area: bills;
 }
 
+.content__informative {
+  color: var(--color-text-muted);
+}
+
+.content__link:hover {
+  font-weight: var(--weight-semibold);
+}
+
 /* 10. Statistiques */
 .stat__label {
   font-size: var(--text-xl);
@@ -351,6 +369,10 @@ a.btn[aria-disabled="true"] {
 .stat__value {
   font-size: var(--text-3xl);
   font-weight: var(--weight-bold);
+}
+
+.stat__informative {
+  color: var(--color-text-muted);
 }
 
 .bar {

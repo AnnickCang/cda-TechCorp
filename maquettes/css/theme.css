@@ -15,10 +15,18 @@
 
 :root {
   /* Couleurs */
-  --color-primary: #166534;
+  /* Couleurs de l'exemple - a supprimer quand la palette de couleurs sera bien définie*/
+  /*--color-primary: #166534;
   --color-primary-hover: #14532d;
   --color-primary-soft: #f0fdf4;
-  --color-focus: #15803d;
+  --color-focus: #15803d;*/
+
+  /* Palette de couleurs */
+  --color-bg: var(--blue-100);
+  --color-text-muted: var(--gray-500);
+  --color-bg-sidebar: var(--blue-900);
+  --color-text-sidebar: var(--gray-0);
+  --color-text-hover-sidebar: var(--gray-300);
   --color-dot-text: var(--gray-0);
 
   /* Police et texte */
