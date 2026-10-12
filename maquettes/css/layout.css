@@ -86,6 +86,7 @@
 
 .app__topbar {
   grid-area: topbar;
+  width: 100%;
   height: var(--header-height);
   display: grid;
   grid-template-columns: 1fr 1fr;

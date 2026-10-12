@@ -219,7 +219,19 @@ a.btn[aria-disabled="true"] {
   color: var(--color-dot-text);
 }
 
-/* 5. Images et icônes */
+/* 5. Lien d'évitement */
+.skip-link {
+  position: absolute;
+  top: var(--space-1);
+  left: -999rem;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: var(--space-1);
+}
+
+/* 6. Images et icônes */
 .entreprise__logo {
   width: 2rem;
   height: 2rem;
@@ -236,7 +248,7 @@ a.btn[aria-disabled="true"] {
   filter: brightness(0) invert(1);
 }
 
-/* 6. Page de connexion */
+/* 7. Page de connexion */
 .form {
   display: grid;
   gap: var(--space-5);
@@ -270,7 +282,7 @@ a.btn[aria-disabled="true"] {
   gap: var(--space-2);
 }
 
-/* 7. Topbar */
+/* 8. Topbar */
 .topbar__logo-companyname {
   display: flex;
   align-items: center;
@@ -300,7 +312,7 @@ a.btn[aria-disabled="true"] {
   margin: 0;
 }
 
-/* 8. Sidebar */
+/* 9. Sidebar */
 .nav {
   display: flex;
   flex-direction: column;
@@ -333,7 +345,7 @@ a.btn[aria-disabled="true"] {
   color: var(--color-text-hover-sidebar);
 }
 
-/* 9. Content */
+/* 10. Content */
 .content__holidays {
   grid-area: holidays;
   display: flex;
@@ -360,7 +372,7 @@ a.btn[aria-disabled="true"] {
   font-weight: var(--weight-semibold);
 }
 
-/* 10. Statistiques */
+/* 11. Statistiques */
 .stat__label {
   font-size: var(--text-xl);
   font-weight: var(--weight-semibold);
@@ -389,7 +401,7 @@ a.btn[aria-disabled="true"] {
   background-color: var(--color-primary);
 }
 
-/* 11. Listes */
+/* 12. Listes */
 .list {
   list-style-type: none;
   flex-grow: 1;
@@ -401,7 +413,7 @@ a.btn[aria-disabled="true"] {
   align-items: center;
 }
 
-/* 12. Les tableaux */
+/* 13. Les tableaux */
 .table {
   width: 100%;
 }
