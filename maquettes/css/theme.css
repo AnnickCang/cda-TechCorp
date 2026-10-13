@@ -29,18 +29,21 @@
   --color-text-hover-sidebar: var(--gray-300);
   --color-dot-text: var(--gray-0);
 
+  /* Espacements */
+  --space-skip-link: 15rem; /* 240px */
+
   /* Police et texte */
   --font-sans: "SourceSans3", system-ui, sans-serif;
-  
+
   /* Effets */
   --radius: 4px;
-  
+
   /* Boutons */
   --button-height: 40px;
 
   /* Icones */
-  --icon-width-base: 1.25rem;    /* 20px */
-  --icon-height-base: 1.25rem;    /* 20px */
+  --icon-width-base: 1.25rem; /* 20px */
+  --icon-height-base: 1.25rem; /* 20px */
 }
 
 @font-face {

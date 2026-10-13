@@ -223,12 +223,13 @@ a.btn[aria-disabled="true"] {
 .skip-link {
   position: absolute;
   top: var(--space-1);
-  left: -999rem;
+  left: var(--space-skip-link);
   z-index: 100;
+  color: var(--color-surface);
 }
 
 .skip-link:focus {
-  left: var(--space-1);
+  color: var(--color-primary);
 }
 
 /* 6. Images et icônes */
