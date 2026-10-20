@@ -3,58 +3,14 @@
 
 <!-- [class.app--nav-open] : la classe est ajoutee quand navOpen() vaut true (seance 4). -->
 <div class="app" [class.app--nav-open]="navOpen()">
-  <header class="app__header topbar">
-    <!-- Bouton visible sur mobile uniquement : ouvre et ferme la navigation. -->
-    <button
-      class="topbar__menu"
-      type="button"
-      aria-controls="navigation"
-      [attr.aria-expanded]="navOpen()"
-      (click)="toggleNav()"
-    >
-      <svg
-        class="nav__icon"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        aria-hidden="true"
-        focusable="false"
-      >
-        <path d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-      <span class="sr-only">Menu</span>
-    </button>
+  <app-topbar
+    [topbarAppName]="appName"
+    [currentUser]="currentUser"
+    [topbarNavOpen]="navOpen()"
+    (menuToggle)="toggleNav()"
+  />
 
-    <a class="brand" href="/">
-      <img class="brand__logo" src="logo.svg" alt="" width="32" height="32" />
-      {{ appName }}
-    </a>
-
-    <div class="topbar__actions">
-      <div class="user">
-        <span class="avatar" aria-hidden="true">CM</span>
-        <div class="user__info">
-          <p class="user__name">{{ currentUser.firstName }} {{ currentUser.lastName }}</p>
-          <p class="user__role">{{ currentUser.jobTitle }}</p>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <nav class="app__sidebar sidebar" id="navigation" aria-label="Navigation principale">
-    <div class="nav__section">
-      <h2 class="nav__heading" id="nav-perso">Mon espace</h2>
-      <ul class="nav" role="list" aria-labelledby="nav-perso">
-        <li><a class="nav__link" href="/" aria-current="page">Tableau de bord</a></li>
-        <li><a class="nav__link" href="/">Mes congés</a></li>
-        <li><a class="nav__link" href="/">Notes de frais</a></li>
-        <li><a class="nav__link" href="/">Mon profil</a></li>
-      </ul>
-    </div>
-  </nav>
+  <app-sidebar />
 
   <!-- tabindex="-1" : la cible du lien d'evitement peut recevoir le focus. -->
   <main class="app__main" id="contenu" tabindex="-1">

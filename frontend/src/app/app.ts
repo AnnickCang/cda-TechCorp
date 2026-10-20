@@ -2,9 +2,11 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Employee } from './models/employee';
 import { LEAVE_STATUS_LABELS, LEAVE_TYPE_LABELS, LeaveRequest } from './models/leave-request';
+import { Sidebar } from './layout/sidebar/sidebar';
+import { Topbar } from './layout/topbar/topbar';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Sidebar, Topbar], // On met dedans les composants, pas les interfaces
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
